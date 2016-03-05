@@ -3,12 +3,10 @@ import sys
 
 print(sys.version)
 # Store string literal for latter use
-theStr = "You should never underestimate the predictability of stupidity.\n"
+theStr = "You should never underestimate the predictability of stupidity."
 
 # Get padding width for quote 'author'
 padWidth = len(theStr)
 
-# See if .rjust works with string literal
-theOutput = theStr + "-- Bullet Tooth Tony".rjust(len(theStr))
 # Print all
-print(theOutput)
+print theStr, '\n', "-- Bullet Tooth Tony".rjust(len(theStr)-1)
